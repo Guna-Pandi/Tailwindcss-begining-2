@@ -7,16 +7,169 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   </head>
-  <body>
+  <body class="bg-color-primary text-color-white tracking-wider">
     <!-- hraeder -->
     <header>
       <!-- navbar -->
-      <nav class="container">
+      <nav class="container flex justify-between items-center">
+        <div class="py-5 text-color-secondary font-bold text-3xl">
+          <a href="#home"
+            ><span class="text-color-white">Sandi</span>'<span
+              class="text-color-white"
+              >s</span
+            >_Manage.</a
+          >
+        </div>
         <div>
-          <a href="#home"><span>Sandi's</span>Manage</a>
+          <ul class="hidden lg:flex items-center space-x-6">
+            <li>
+              <a
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#blog"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                class="bg-color-secondary px-9 py-3 rounded-lg capitalize font-bold hover:opacity-80 ease-in duration-200">
+                Free Trial
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- mobile devices -->
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div
+          id="menu"
+          class="hidden bg-color-primary-dark h-screen absolute inset-0">
+          <ul class="h-full grid place-items-center py-20">
+            <li>
+              <a
+                id="hlink"
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#features"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#testimonials"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#pricing"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#blog"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#contact"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                class="bg-color-secondary px-9 py-3 rounded-lg capitalize font-bold hover:opacity-80 ease-in duration-200">
+                Free Trial
+              </button>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
+
+    <!-- hero area -->
+    <main>
+      <section id="home">
+        <div class="container py-20">
+          <div>
+            <div>
+              <h1>Awesome App for Your Financial</h1>
+              <p>
+                This should be used to tell a story and let your users know a
+                little more about app and it's use, How can benefit them.
+              </p>
+              <button
+                class="bg-color-secondary px-9 py-3 rounded-lg capitalize font-bold hover:opacity-80 ease-in duration-200">
+                Download App
+              </button>
+            </div>
+            <div>
+              <img src="../img/hero4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
