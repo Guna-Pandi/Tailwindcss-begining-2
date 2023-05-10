@@ -1,13 +1,10 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 ::-webkit-scrollbar {
   display: none;
 }
-
 
 ::-moz-scrollbar {
   display: none;
@@ -22,9 +19,15 @@ html {
   -ms-overflow-style: none;
 }
 
-.btn{
-@apply bg-color-secondary px-9 py-3 rounded-lg capitalize font-bold hover:opacity-80 ease-in duration-200;
+.btn {
+  @apply bg-color-secondary px-9 py-3 rounded-lg capitalize font-bold hover:opacity-80 ease-in duration-200;
 }
-.title{
-@apply text-4xl md:text-5xl font-bold leading-snug mb-4;
+.title {
+  @apply text-4xl md:text-5xl font-bold leading-snug mb-4;
+}
+.blob1 {
+  @apply w-80 h-80 bg-color-blob absolute top-6 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
+}
+.blob2 {
+  @apply w-80 h-80 bg-color-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
 }
