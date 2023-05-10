@@ -998,6 +998,11 @@ html {
     left: 8rem;
   }
 
+  .lg\:after\:top-10::after {
+    content: var(--tw-content);
+    top: 2.5rem;
+  }
+
   .lg\:after\:flex::after {
     content: var(--tw-content);
     display: flex;
@@ -1071,6 +1076,11 @@ html {
   .lg\:after\:bg-no-repeat::after {
     content: var(--tw-content);
     background-repeat: no-repeat;
+  }
+
+  .lg\:after\:content-\[\'\'\]::after {
+    --tw-content: '';
+    content: var(--tw-content);
   }
 }
 
